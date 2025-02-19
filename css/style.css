@@ -1,4 +1,154 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+* {
+  box-sizing: border-box;
 }
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+}
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* Your CSS below here */
+
+h1 {
+  background-image: url(/img/logo.png);
+  /* filter: drop-shadow(3px 3px 4px black); */
+  border-radius: 50%;  
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+article {
+  display: flex;
+  /* fallback image */
+  background-image: url("/img/top-image.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  background: 
+    url("/img/top-image.png") top center no-repeat,
+    url("/img/bottom-image.png") bottom center no-repeat,
+    linear-gradient(
+      180deg,
+        rgb(152, 152, 152) 0%,
+        rgb(255 255 255 / 30%) 20%,
+        rgb(255 255 255 / 30%)  70%,
+        rgb(152, 152, 152) 100%
+    );
+    background-color: white;
+    border-top: 1mm solid red;
+    border-bottom: 1mm solid red;
+    align-items: center;
+
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 50px;
+}
+a {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+a:hover {
+  color: red;
+}
+.quotes {
+  font-size: 12px;
+  line-height: 2px;
+  text-align: center;
+}
+
+.column-box {
+  display: flex;
+  gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.paragraph {
+  min-height: 250px;
+}
+.column {
+  flex: 1;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left;
+  font-size: 20px;
+  margin: 0;
+}
+
+.column p {
+  font-family:  Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 13px;
+}
+
+td {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height:  1px;
+}
+
+.tablebtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#btn {
+  margin-left: 50px;
+  border-radius: 8px;
+}
+
+#btn:hover{
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+   

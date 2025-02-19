@@ -1,78 +1,127 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
   <meta charset="utf-8">
-  <title>Hello World!</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <title>Fancy letterheaded paper</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
-  <h1>HTML Rocks!</h1>
-  <p>
-    <button  onclick="helloWorld()">Prints Hello World to the Developer console</button>
-  </p>
-  <hr>
-  <form id="addForm">
-    <label for="num1">Number 1:</label>
-    <input type="number" id="num1" name="num1" required>
-    <br>
-    <label for="num2">Number 2:</label>
-    <input type="number" id="num2" name="num2" required>
-    <br>
-    <button type="submit">Add Numbers</button>
-  </form>
 
-  <label id="result">Result:</label>
+  <article>
+    <div class="content">
+      <div class="links">
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
+        <a href="#">Link4</a>
+        <a href="#">Link5</a>
+      </div>
+      <header>Lorem Ipsum</header>
+      <div class="quotes">
+        <p><em>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</em></p>
+        <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+          pain..."</p>
+        <hr>
+      </div>
+      <div class="column-box">
+        <div class="column">
+          <div class="paragraph">
+            <h2>Paragraph 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt dictum nibh sed
+              imperdiet.
+              Mauris congue, tortor nec consequat volutpat, justo sem aliquet diam, tincidunt ultricies lectus nulla non
+              est.
+              Aliquam erat volutpat. Donec tempus ut quam ut vehicula. Pellentesque dapibus placerat massa, sit amet
+              auctor
+              lectus sagittis id. Aenean malesuada ut quam sit amet malesuada. Etiam mollis ligula vitae mauris euismod
+              consectetur. Vestibulum ante lacus, pulvinar non erat sed, molestie pretium libero. Nunc posuere, urna
+              laoreet</p>
+          </div>
+          <div class="paragraph">
+            <h2>Paragraph 2</h2>
+            <p>finibus sollicitudin, urna dolor feugiat tellus, id sodales nibh nisi nec neque. Phasellus interdum, ante
+              in
+              dictum pulvinar, risus lectus semper dolor, in accumsan justo dui in ligula. Proin in auctor nibh. Integer
+              gravida vitae augue eu finibus. Morbi vel imperdiet augue. Ut dignissim congue augue, id auctor lacus
+              accumsan
+              eget. Proin at velit mollis, congue augue id, interdum ex. Aliquam mi augue, auctor at sapien at, auctor
+              fringilla velit. Aenean et est metus. Integer at neque non arcu vehicula blandit. Donec et nisi enim.
+              Donec lacinia in ex id lobortis. Proin finibus fringilla dapibus. Donec lectus nisl, luctus in libero
+              quis, fermentum euismod elit.</p>
+          </div>
+        </div>
 
-  <hr>
+        <div class="column">
+          <div class="paragraph">
+            <h2>Paragraph 3</h2>
+            <p>Mauris porta, velit vel suscipit tincidunt, nisl lorem commodo sem, ac venenatis erat elit eu dolor. Nam
+              et
+              lacinia justo. Pellentesque lacinia auctor lorem ut ornare. Nunc gravida felis sit amet neque
+              pellentesque,
+              imperdiet viverra purus consequat. Proin eget ante sit amet urna pharetra accumsan. Nunc sed erat lacinia
+              tortor
+              consectetur elementum. Ut facilisis mollis neque, a ornare dui suscipit eu. Praesent sed scelerisque
+              libero,
+              vel
+            </p>
+          </div>
 
-  <button id="jokeButton">Get a Random Joke</button>
-  <p id="joke"></p>
+          <div class="paragraph">
+            <h2>Paragraph 4</h2>
+            <p> tincidunt magna. Etiam sit amet nisl ante. Vivamus quis blandit felis, sed venenatis massa. Morbi ac
+              orci
+              a
+              velit consequat egestas. Fusce gravida faucibus vehicula. Ut rutrum, arcu pulvinar sodales auctor, sapien
+              justo
+              auctor ex, nec pulvinar quam felis nec enim. Aliquam rutrum arcu id dui posuere iaculis. Interdum et
+              malesuada
+              fames ac ante ipsum primis in faucibus.</p>
 
-  <script type="module" script="js/main.js">
-    import {helloWorld, add, fetchRandomJoke} from './js/main.js';
+            <div class="tablebtn">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><input type="radio" name="what" value="paragraphs" id="para" checked="checked"></td>
+                    <td><label for="para">paragraphs</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="what" value="words" id="words" checked="checked"></td>
+                    <td><label for="words">words</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="what" value="bytes" id="byte" checked="checked"></td>
+                    <td><label for="byte">bytes</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="what" value="list" id="list" checked="checked"></td>
+                    <td><label for="list">list</label></td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="submit" id="btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    // This shows how to assign a function to the window object
-    // so that it can be called from the browser console
-    window.helloWorld = helloWorld;
+    <h1>Awesome<br>Company</h1>
+    <address>
+      <p>The Awesome Company</p>
+      <p>102-112 Frail Bend Bridge<br>
+        The Dwindlings<br>
+        Little Hornet<br>
+        HX3 9ZQ<br>
+        UK</p>
+    </address>
 
-    // This shows how to add an event listener to a button in the HTML
-    // and call a function when the button is clicked
-    const form = document.getElementById('addForm');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const num1 = parseFloat(document.getElementById('num1').value);
-      const num2 = parseFloat(document.getElementById('num2').value);
-      try{
-        const result = add(num1, num2);
-        document.getElementById('result').textContent = `Result: ${result}`;
-      }catch(e){
-        console.error(e);
-        document.getElementById('result').textContent = `Error: ${e.message}`;
-      }
+    <script type="module" src="js/main.js"></script>
 
-    });
-
-    // this shows how to add an event listener to a button in the HTML
-    // that calls a function that fetches a random joke from an API
-    // and displays it on the page
-    const jokebtn = document.getElementById('jokeButton');
-    const jokeresult = document.getElementById('joke');
-    jokebtn.addEventListener('click', async () => {
-      try {
-        jokeresult.textContent = 'Loading...';
-        const joke = await fetchRandomJoke();
-        document.getElementById('joke').textContent = joke;
-      } catch (e) {
-        console.error(e);
-        document.getElementById('joke').textContent = `Error: ${e.message}`;
-      }
-    });
-  </script>
+  </article>
 
 </body>
 
